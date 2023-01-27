@@ -1,0 +1,131 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  
+  .navbar a:hover {
+    color: #f2f2f2;
+  }
+  
+  .container {
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #337ab7;
+    margin-bottom: 50px;
+  }
+  
+  .img-fluid  {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+
+  @media (max-width: 576px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  @keyframes kleurtjes {
+    0% {color: #ff0000;} 
+    25% {color: #ffff00;} 
+    50% {color: #0000ff;} 
+    75% {color: #ffff00;} 
+    100% {color: #ff0000;} 
+  }
+  
+  
+  .navbar-brand {
+    animation: kleurtjes 5s ease-in-out infinite;
+  }
+
+
+nav {
+    background-color: #1C1108;
+  }
+  
+  nav a {
+    color: #C87200;
+  }
+  
+  
+  @media (max-width: 576px) {
+    nav {
+      background-color: #C87200;
+    }
+  
+    nav a {
+      color: #1C1108;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .navbar-brand {
+      display: none;
+    }
+  }
+
+ 
+  
+
+@media (max-width: 768px) {
+    .navbar-brand {
+      display: none;
+    }
+    .navbar-nav {
+      justify-content: center;
+    }
+    .nav-item {
+      display: inline-block;
+    }
+    .nav-link {
+      border: 2px solid blue;
+      border-radius: 0;
+      padding: 10px 20px;
+      margin: 10px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+    }
+    .nav-link:hover {
+      border-color: green;
+    }
+  }
+  
+
+  footer {
+    height: 200px;
+    background-color: #ddd;
+    
+   text-align: center;
+   border: solid #C87200;
+
+}
+
+
+.imgkleiner {
+    width: 100px;
+    height: 100px; 
+    object-fit: cover; 
+
+}
+
+
+footer p {
+    animation: dvdlogo 25s infinite;
+
+}
+@keyframes dvdlogo {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(20px, 20px); }
+    100% { transform: translate(0, 0); }
+  }
